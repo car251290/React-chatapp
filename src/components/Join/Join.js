@@ -1,4 +1,4 @@
-import React ,{usestate}from 'react';
+import React ,{useState}from 'react';
 import {Link} from 'react-router-dom';
 
 import './Join.css';
@@ -6,8 +6,8 @@ import './Join.css';
 
 
  const Join =() => {
-     const [name,setName]=usestate('');
-     const [room,setRoom]=usestate('');
+     const [name,setName]= useState('');
+     const [room,setRoom]= useState('');
 
     return(
         <div className = 'joinOuterContainer'>
