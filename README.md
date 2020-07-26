@@ -37,6 +37,10 @@ Information about this tool : https://socket.io/#examples
 # React 
 Continue growing in React developer I use this information to practice my skills in javaScript and learn also Back end and Front End.
 
+# Node.js
+For the HTTP, I use in the app I do some documentation to understandeted better I got experency using node.js for simple React component in http for the ChatApp
+https://nodejs.org/dist/latest-v14.x/docs/api/http.html
+
 Setup:
 
 run npm i && npm start for both client and server side to start the development server
