@@ -41,6 +41,11 @@ Continue growing in React developer I use this information to practice my skills
 For the HTTP, I use in the app I do some documentation to understandeted better I got experency using node.js for simple React component in http for the ChatApp
 https://nodejs.org/dist/latest-v14.x/docs/api/http.html
 
+using documentation to understand better how it works the chat using JavaScript
+String type
+JavaScript's String type is used to represent textual data. It is a set of "elements" of 16-bit unsigned integer values. Each element in the String occupies a position in the String. The first element is at index 0, the next at index 1, and so on. The length of a String is the number of elements in it.
+link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type
+
 Setup:
 
 run npm i && npm start for both client and server side to start the development server
