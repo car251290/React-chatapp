@@ -3,7 +3,11 @@ const express = require('express');
 const socketio = require('socket.io');
 const http = require('http');
 
+<<<<<<< HEAD
 const {addUser,removeUser,getUser,getUsersInRoom} = require('./users');
+=======
+const {addUser,removeUser,getUser,getUsersInRoom} = require('./user');
+>>>>>>> 6f215ef58b345be085872d431e573976d63847d0
 
 const PORT = process.env.PORT || 5000;
 const router = require('./router');
@@ -27,17 +31,24 @@ io.on('connection',(socket) => {
         socket.emit('message',{user:'admin',text:`${user.name},Welcome to the room ${user.room}`})
         createSocket.broadcas.to(user.room).emit('messager',{user: 'admin',text: `${user.name},has joing`})
         socket.join(user.room);
+<<<<<<< HEAD
         io.to(user.room).emit('roomData',{room:user.room,users:getUsersInRoom(user.room)})
 
         
         callback();
 
+=======
+        callback();
+>>>>>>> 6f215ef58b345be085872d431e573976d63847d0
     });
     socket.on('sendMessager',(message,callback)=> {
         const user = getUser(socket.id);
         io.to(user.room).emit('message',{user: user.name, text: message})
+<<<<<<< HEAD
         io.to(user.room).emit('roomData',{room: user.room, text: message})
         
+=======
+>>>>>>> 6f215ef58b345be085872d431e573976d63847d0
         callback();
     })
     socket.on('disconnect',() => {
