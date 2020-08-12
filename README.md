@@ -36,6 +36,7 @@ Information about this tool : https://socket.io/#examples
 
 # React 
 Continue growing in React developer I use this information to practice my skills in javaScript and learn also Back end and Front End.
+for the project have the back end cover using this useful tool of socket help a lot to understand better how the back end and frond end work!
 
 # Node.js
 For the HTTP, I use in the app I do some documentation to understandeted better I got experency using node.js for simple React component in http for the ChatApp
