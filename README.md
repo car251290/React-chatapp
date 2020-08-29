@@ -9,6 +9,31 @@ Instant messaging and chat
 Socket.IO's "Hello world" is a chat app in just a few lines of code.
 Use it to this play the chat in this app I will use it for get the name of the usar and the messages in the chat, it is a tool use it for One of the most powerful JavaScript frameworks on GitHub, and most depended-upon npm modules.
 
+##HTTP 
+Serving HTML
+
+So far in index.js we’re calling res.send and passing it a string of HTML. Our code would look very confusing if we just placed our entire application’s HTML there, so instead we’re going to create a index.html file and serve that instead.
+
+
+Integrating Socket.IO
+
+Socket.IO is composed of two parts:
+
+A server that integrates with (or mounts on) the Node.JS HTTP Server socket.io
+A client library that loads on the browser side socket.io-client
+During development, socket.io serves the client automatically for us, as we’ll see, so for now we only have to install one module:
+
+npm install socket.io
+
+
+That’s all it takes to load the socket.io-client, which exposes an io global (and the endpoint GET /socket.io/socket.io.js), and then connect.
+
+If you would like to use the local version of the client-side JS file, you can find it at node_modules/socket.io-client/dist/socket.io.js.
+
+Notice that I’m not specifying any URL when I call io(), since it defaults to trying to connect to the host that serves the page.
+
+
+Let’s refactor our route handler to use sendFile instead.
 
 The API on the server-side is similar, you also get an socket object which extends the Node.js EventEmitter class:
 # Example for understand how to use the Socket
