@@ -75,7 +75,9 @@ The main idea behind Socket.IO is that you can send and receive any events you w
     });
   });
 </script>
-##Guide for making the chat and send the image.
+
+#Guide for making the chat and send the image.
+
 https://socket.io/get-started/chat
 
 # React 
