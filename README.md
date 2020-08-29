@@ -56,8 +56,27 @@ io.on('connect', socket => {
     console.log(elem1, elem2, elem3);
   });
 });
-
 Information about this tool : https://socket.io/#examples
+
+
+##Index.js for socket.oi ()
+The main idea behind Socket.IO is that you can send and receive any events you want, with any data you want. Any objects that can be encoded as JSON will do, and binary data is supported too.
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+  $(function () {
+    var socket = io();
+    $('form').submit(function(e) {
+      e.preventDefault(); // prevents page reloading
+      socket.emit('chat message', $('#m').val());
+      $('#m').val('');
+      return false;
+    });
+  });
+</script>
+##Guide for making the chat and send the image.
+https://socket.io/get-started/chat
 
 # React 
 Continue growing in React developer I use this information to practice my skills in javaScript and learn also Back end and Front End.
