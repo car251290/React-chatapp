@@ -93,6 +93,25 @@ String type
 JavaScript's String type is used to represent textual data. It is a set of "elements" of 16-bit unsigned integer values. Each element in the String occupies a position in the String. The first element is at index 0, the next at index 1, and so on. The length of a String is the number of elements in it.
 link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type
 
+## Emoji in React!
+Features
+
+It's tiny (on purpose).
+Simple functional API with minimal surface area and full customization hooks.
+Lean implementation that follows the React way™ all the way down (no DOM manipulation).
+Renders emoji from Twitter's Twemoji cdn out of the box.
+Currently in use on high-traffic production pages.
+What it doesn't do
+
+We've consciously left out some extra features in order to keep this library as minimal as possible:
+
+Doesn't parse emoji names like :smile:.
+Doesn't parse emoticons like :).
+Doesn't provide built-in support for emoji assets other than Twemoji, but provides hooks to use custom sets.
+Installation
+
+npm install --save react-easy-emoji
+
 Setup:
 
 run npm i && npm start for both client and server side to start the development server
