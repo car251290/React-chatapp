@@ -9,13 +9,13 @@ Instant messaging and chat
 Socket.IO's "Hello world" is a chat app in just a few lines of code.
 Use it to this play the chat in this app I will use it for get the name of the usar and the messages in the chat, it is a tool use it for One of the most powerful JavaScript frameworks on GitHub, and most depended-upon npm modules.
 
-##HTTP 
+## HTTP 
 Serving HTML
-
 So far in index.js we’re calling res.send and passing it a string of HTML. Our code would look very confusing if we just placed our entire application’s HTML there, so instead we’re going to create a index.html file and serve that instead.
 
 
-Integrating Socket.IO
+
+## Integrating Socket.IO
 
 Socket.IO is composed of two parts:
 
